@@ -1,3 +1,4 @@
+
 html,body{
     width: 100%;
     max-width: 100%;
@@ -5,20 +6,22 @@ html,body{
     margin: 0;
     font-family: 'Fjalla One', sans-serif;
     background: #245963;
-}
-
-h1,h2,h3,h4,h5,h6,p{
+  }
+  
+  
+  
+  h1,h2,h3,h4,h5,h6,p{
     margin: 0;
-}
-
-.first-section{
+  }
+  
+  .first-section{
     height: 600px;
     width: 100%;
     background: url(../images/backgr.png) no-repeat;
     background-size: cover;
-}
+  }
   
-.f-s-inner{
+  .f-s-inner{
     width: 95%;
     height: 100%;
     max-width: 1170px;
@@ -26,15 +29,15 @@ h1,h2,h3,h4,h5,h6,p{
     display: flex;
     align-items: center;
     justify-content: center;
-}
+  }
   
-header{
+  header{
     position: absolute;
     top: 0;
     width: 100%;
-}
+  }
   
-.header{
+  .header{
     width: 95%;
     max-width: 1170px;
     margin: 0 auto;
@@ -43,49 +46,49 @@ header{
     display: flex;
     height: 75px;
     backdrop-filter: blur(10px);
-}
+  }
   
-.header-inner{
+  .header-inner{
     width: 95%;
     margin: 0 auto;
     display: flex;
     align-items: center;
     justify-content: space-between;
-}
+  }
   
-.header-logo{
+  .header-logo{
     color: white;
     font-size: 25px;
-}
+  }
   
-.header-nav{
+  .header-nav{
     display: flex;
-}
+  }
   
-.header-nav a{
+  .header-nav a{
     color: white;
     padding-left: 15px;
     font-size: 17px;
-}
+  }
   
-.f-s-banner{
+  .f-s-banner{
     display: flex;
     align-items: center;
     flex-direction: column;
-}
+  }
   
-.f-s-banner h1{
+  .f-s-banner h1{
     color: white;
     font-size: 41px;
-}
+  }
   
-.f-s-banner h2{
+  .f-s-banner h2{
     color: white;
     font-size: 31px;
     padding: 15px 0;
-}
+  }
   
-.f-s-btn{
+  .f-s-btn{
     box-sizing: border-box;
     border: 2px solid white;
     padding: 12px 20px;
@@ -95,4 +98,62 @@ header{
     display: flex;
     align-items: center;
     text-transform: uppercase;
-}
+  }
+  
+  .second-selection{
+    position: relative;
+    top: -80px;
+    height: 675px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .second-selection-box{
+    display: flex;
+    align-items: center;
+    width: 50%;
+    background-color: red;
+  }
+  
+  .s-s-box-inner{
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .s-s-box-inner img{
+    padding-bottom: 30px;
+  }
+  
+  .s-s-box-inner h1{
+    color: white;
+    text-transform: uppercase;
+    padding-bottom: 10px;
+    text-align: center;
+    font-size: 29px;
+  }
+  
+  .s-s-box-inner p{
+    color: white;
+    text-align: center;
+    font-size: 16px;
+  }
+  
+  .second-selection-box.red{
+    background-color: #e84c3d;
+  }
+  
+  .second-selection-box.yellow{
+    background: #fdbd1f;
+  }
+  
+  .second-selection-box.blue{
+    background: #1bbc9b;
+  }
+  
+  .second-selection-box.violet{
+    background: #9b58b5;
+  }
