@@ -144,6 +144,10 @@ header{
   font-size: 29px;
 }
 
+.third-selection{
+	margin-top: 40px;
+}
+
 .third-selection h1{
   color: white;
   font-size: 29px;
@@ -155,8 +159,8 @@ header{
   color: white;
   font-size: 21px;
   text-align: center;
-  padding: 15px;
   text-transform: uppercase;
+  margin-bottom: 70px;
 }
 
 .third-selection h2:before,
