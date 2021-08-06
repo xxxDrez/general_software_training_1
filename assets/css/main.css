@@ -159,6 +159,28 @@ header{
   text-transform: uppercase;
 }
 
+.third-selection h2:before,
+.third-selection h2:after {
+	content: '';
+	display: inline-block;
+	vertical-align: middle;
+	box-sizing: border-box;
+	width: 120px;
+	height: 1px;
+	background: #387d89;
+	border: solid #387d89;
+	border-width: 0 10px;
+	margin-left: 20px;
+	margin-right: 20px;
+}
+
+.third-selection h2:before {
+	margin-left: -100%;
+}
+.third-selection h2:after {
+	margin-right: -100%;
+}
+
 .t-h-btn{
   box-sizing: border-box;
   padding: 8px 12px;
@@ -255,3 +277,100 @@ header{
   background: #9b58b5;
 }
 
+.fourth-selection{
+  width: 50%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.fourth-selection img{
+  margin: 0 auto;
+  padding-top: 50px;
+  padding-bottom: 30px;
+}
+
+.fourth-selection h1{
+  text-transform: uppercase;
+  color: white;
+  font-size: 29px;
+  text-align: center;
+}
+
+.fourth-selection h2{
+  margin: 0 auto;
+  text-transform: uppercase;
+  color: white;
+  font-size: 21px;
+  text-align: center;
+  padding-top: 10px;
+}
+
+.fourth-selection h2:before,
+.fourth-selection h2:after {
+	content: '';
+	display: inline-block;
+	vertical-align: middle;
+	box-sizing: border-box;
+	width: 80px;
+	height: 1px;
+	background: #387d89;
+	border: solid #387d89;
+	border-width: 0 10px;
+	margin-left: 20px;
+	margin-right: 20px;
+}
+
+.fourth-selection h2:before {
+	margin-left: -100%;
+}
+.fourth-selection h2:after {
+	margin-right: -100%;
+}
+
+.fs-inputs-container{
+  padding-top: 35px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+form{
+  width: 100%;
+}
+
+.fs-inputs-container input{
+  height: 45px;
+  width: 48%;
+  background: #245963;
+  border: 1px solid #387d89;
+  color: white;
+}
+
+.submit{
+	width: 102px;
+	height: 36px;
+	background: #245963;
+	border: 1px solid #387d89;
+	text-transform: uppercase;
+	color: white;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+*:focus{
+  outline: none;
+}
+
+.fs-textarea{
+  margin-top: 30px;
+  height: 135px;
+  resize: none;
+  width: 100%;
+  background: #245963;
+  border: 1px solid #387d89;
+  color: white;
+}
