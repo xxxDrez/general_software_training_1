@@ -96,15 +96,45 @@ header{
 }
 
 .f-s-btn{
-  box-sizing: border-box;
-  border: 2px solid white;
-  padding: 12px 20px;
-  color: white;
-  font-size: 17px;
-  text-align: center;
-  display: flex;
-  align-items: center;
-  text-transform: uppercase;
+	position: relative;
+    text-transform: uppercase;
+    color: white;
+    border: 2px solid white;
+    padding: 11.5px 32.9px;
+    font-size: 17px;
+    border-bottom: transparent;
+}
+.triangle__left{
+	position: absolute;
+	left: -2px;
+	border: 2px solid white;
+	width: 62px;
+	margin-top: 10px;
+	border-top: transparent;
+	border-right: transparent;
+	border-left: transparent;
+}
+
+.triangle__right{
+	position: absolute;
+	right: -2px;
+	border: 2px solid white;
+	width: 62.7px;
+	margin-top: 10px;
+	border-top: transparent;
+	border-right: transparent;
+	border-left: transparent;
+}
+
+.triangle{
+	position: absolute;
+	width: 11.5px;
+	height: 11.5px;
+	border: 2px solid white;
+	border-width: 2px 0 0 2px;
+	transform: rotate(225deg);
+	left: 62px;
+	bottom: -7px;
 }
 
 .second-selection{
@@ -186,16 +216,44 @@ header{
 }
 
 .t-h-btn{
-  box-sizing: border-box;
-  padding: 8px 12px;
+  position: relative;
   color: white;
-  font-size: 15px;
-  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  width: 102px;
+  height: 36px;
   display: flex;
   align-items: center;
-  text-transform: uppercase;
-  text-decoration: none;
-  margin-top: 50px;
+  justify-content: center;
+  margin-top: 40px;
+  font-size: 15px;
+}
+
+.t-h-btn.red::after{
+	position: absolute;
+	content: "";
+    border-left: 12px solid transparent;
+	border-right: 12px solid transparent;
+	border-top: 10px solid #e84c3d;
+	bottom: -10.4px;
+}
+
+.t-h-btn.yellow::after{
+	position: absolute;
+	content: "";
+    border-left: 12px solid transparent;
+	border-right: 12px solid transparent;
+	border-top: 10px solid #fdbd1f;
+	bottom: -10.4px;
+}
+
+.t-h-btn.green::after{
+	position: absolute;
+	content: "";
+    border-left: 12px solid transparent;
+	border-right: 12px solid transparent;
+	border-top: 10px solid #1bbc9b;
+	bottom: -10.4px;
 }
 
 .t-h-btn.red{
@@ -254,8 +312,7 @@ header{
   width: 181px;
   height: 181px;
   border-radius: 50%;
-  padding-bottom: 20px;
-  padding-top: 50px;
+  margin-top: 44px;
 }
 
 
