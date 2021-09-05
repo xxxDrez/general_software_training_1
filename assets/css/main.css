@@ -95,6 +95,55 @@ header{
   padding: 15px 0;
 }
 
+.submit{
+	position: relative;
+	width: 102px;
+	height: 36px;
+	background: #245963;
+	border: 1px solid #387d89;
+	text-transform: uppercase;
+	color: white;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border-bottom: transparent;
+}
+
+.triangle__left_submit{
+	position: absolute;
+	left: -1px;
+	border: 1px solid #387d89;
+	width: 42.7%;
+	margin-top: 10px;
+	border-top: transparent;
+	border-right: transparent;
+	border-left: transparent;
+	bottom: 0px;
+}
+
+.triangle__right_submit{
+	position: absolute;
+	right: -1px;
+	border: 1px solid #387d89;
+	width: 42.6%;
+	margin-top: 10px;
+	border-top: transparent;
+	border-right: transparent;
+	border-left: transparent;
+	bottom: 0px;
+}
+
+.triangle_submit{
+	position: absolute;
+	width: 11.5px;
+	height: 11.5px;
+	border: 1px solid #387d89;
+	border-width: 1px 0 0 1px;
+	transform: rotate(225deg);
+	bottom: -6px;
+	background: #245963;
+}
+
 .f-s-btn{
 	position: relative;
     text-transform: uppercase;
@@ -104,6 +153,7 @@ header{
     font-size: 17px;
     border-bottom: transparent;
 }
+
 .triangle__left{
 	position: absolute;
 	left: -2px;
@@ -408,18 +458,6 @@ form{
   background: #245963;
   border: 1px solid #387d89;
   color: white;
-}
-
-.submit{
-	width: 102px;
-	height: 36px;
-	background: #245963;
-	border: 1px solid #387d89;
-	text-transform: uppercase;
-	color: white;
-	display: flex;
-	align-items: center;
-	justify-content: center;
 }
 
 *:focus{
