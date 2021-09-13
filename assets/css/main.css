@@ -1,3 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap');
+/*@import url('../css/reset.css');*/
+
+*{
+  margin: 0;
+}
 
 html,body{
   width: 100%;
@@ -8,17 +14,17 @@ html,body{
   background: #29606b;
 }
 
+header{
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
 .body-inner {
   width: 95%;
   max-width: 1170px;
   margin: 0 auto;
   position: relative;
-}
-
-
-
-h1,h2,h3,h4,h5,h6,p{
-  margin: 0;
 }
 
 .first-section{
@@ -28,7 +34,7 @@ h1,h2,h3,h4,h5,h6,p{
   background-size: cover;
 }
 
-.f-s-inner{
+.first-section-inner{
   width: 95%;
   height: 100%;
   max-width: 1170px;
@@ -36,12 +42,6 @@ h1,h2,h3,h4,h5,h6,p{
   display: flex;
   align-items: center;
   justify-content: center;
-}
-
-header{
-  position: absolute;
-  top: 0;
-  width: 100%;
 }
 
 .header{
@@ -63,36 +63,52 @@ header{
   justify-content: space-between;
 }
 
-.header-logo{
+.header-brand{
   color: white;
   font-size: 25px;
 }
 
-.header-nav{
+.header-navigation{
   display: flex;
 }
 
-.header-nav a{
+.header-navigation a{
   color: white;
   padding-left: 15px;
   font-size: 17px;
+  cursor: pointer;
 }
 
-.f-s-banner{
+.header-navigation .active{
+  color: black;
+  padding-left: 15px;
+  font-size: 17px;
+  cursor: pointer;
+}
+
+.first-section-banner{
   display: flex;
   align-items: center;
   flex-direction: column;
 }
 
-.f-s-banner h1{
+.first-section-banner h1{
   color: white;
   font-size: 41px;
+  font-family: 'Fjalla One', sans-serif;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 5;
 }
 
-.f-s-banner h2{
+.first-section-banner h2{
   color: white;
   font-size: 31px;
   padding: 15px 0;
+  font-family: 'Fjalla One', sans-serif;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 5;
 }
 
 .submit{
@@ -107,6 +123,8 @@ header{
 	align-items: center;
 	justify-content: center;
 	border-bottom: transparent;
+	cursor: pointer;
+	margin-top: 30px;
 }
 
 .triangle__left_submit{
@@ -144,14 +162,16 @@ header{
 	background: #245963;
 }
 
-.f-s-btn{
+.first-section-button{
 	position: relative;
-    text-transform: uppercase;
-    color: white;
-    border: 2px solid white;
-    padding: 11.5px 32.9px;
-    font-size: 17px;
-    border-bottom: transparent;
+  text-transform: uppercase;
+  color: white;
+  border: 2px solid white;
+  padding: 11.5px 32.9px;
+  font-size: 17px;
+  border-bottom: transparent;
+  cursor: pointer;
+  text-decoration: none;
 }
 
 .triangle__left{
@@ -190,7 +210,6 @@ header{
 .second-selection{
   position: relative;
   top: -80px;
-  height: 675px;
   width: 100%;
   display: flex;
   flex-wrap: wrap;
@@ -202,9 +221,11 @@ header{
   white-space: pre-line;
   width: 50%;
   background-color: red;
+  padding-top: 42.4px;
+  padding-bottom: 42.4px;
 }
 
-.s-s-box-inner{
+.second-selection-box-inner{
   width: 90%;
   margin: 0 auto;
   display: flex;
@@ -212,11 +233,23 @@ header{
   align-items: center;
 }
 
-.s-s-box-inner img{
-  padding-bottom: 30px;
+.icon-background{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: white;
+  width: 99px;
+  height: 99px;
+  border-radius: 50%;
+  margin-bottom: 28px;
 }
 
-.s-s-box-inner h1{
+.icon-background img{
+  width: 54px;
+  height: 55px;
+}
+
+.second-selection-box-inner h1{
   color: white;
   text-transform: uppercase;
   padding-bottom: 10px;
@@ -265,7 +298,7 @@ header{
 	margin-right: -100%;
 }
 
-.t-h-btn{
+.third-header-button{
   position: relative;
   color: white;
   text-decoration: none;
@@ -279,42 +312,42 @@ header{
   font-size: 15px;
 }
 
-.t-h-btn.red::after{
+.third-header-button.red::after{
 	position: absolute;
 	content: "";
-    border-left: 12px solid transparent;
+  border-left: 12px solid transparent;
 	border-right: 12px solid transparent;
 	border-top: 10px solid #e84c3d;
 	bottom: -10.4px;
 }
 
-.t-h-btn.yellow::after{
+.third-header-button.yellow::after{
 	position: absolute;
 	content: "";
-    border-left: 12px solid transparent;
+  border-left: 12px solid transparent;
 	border-right: 12px solid transparent;
 	border-top: 10px solid #fdbd1f;
 	bottom: -10.4px;
 }
 
-.t-h-btn.green::after{
+.third-header-button.green::after{
 	position: absolute;
 	content: "";
-    border-left: 12px solid transparent;
+  border-left: 12px solid transparent;
 	border-right: 12px solid transparent;
 	border-top: 10px solid #1bbc9b;
 	bottom: -10.4px;
 }
 
-.t-h-btn.red{
+.third-header-button.red{
   background: #e84c3d;
 }
 
-.t-h-btn.yellow{
+.third-header-button.yellow{
   background: #fdbd1f;
 }
 
-.t-h-btn.green{
+.third-header-button.green{
   background: #1bbc9b;
 }
 
@@ -322,7 +355,7 @@ header{
   width: 100%;
 }
 
-.t-h-selection{
+.third-header-selection{
   width: 100%;
   display: flex;
   justify-content: space-between;
@@ -366,7 +399,7 @@ header{
 }
 
 
-.s-s-box-inner p{
+.second-selection-box-inner p{
   color: white;
   text-align: center;
   font-size: 16px;
@@ -394,12 +427,11 @@ header{
   display: flex;
   align-items: center;
   flex-direction: column;
+  margin-top: 50px;
 }
 
 .fourth-selection img{
   margin: 0 auto;
-  padding-top: 50px;
-  padding-bottom: 30px;
 }
 
 .fourth-selection h1{
@@ -407,6 +439,7 @@ header{
   color: white;
   font-size: 29px;
   text-align: center;
+  font-weight: 400;
 }
 
 .fourth-selection h2{
@@ -416,6 +449,7 @@ header{
   font-size: 21px;
   text-align: center;
   padding-top: 10px;
+  font-weight: 400;
 }
 
 .fourth-selection h2:before,
@@ -440,7 +474,7 @@ header{
 	margin-right: -100%;
 }
 
-.fs-inputs-container{
+.fourth-inputs-container{
   padding-top: 35px;
   width: 100%;
   display: flex;
@@ -452,7 +486,7 @@ form{
   width: 100%;
 }
 
-.fs-inputs-container input{
+.fourth-inputs-container input{
   height: 45px;
   width: 48%;
   background: #245963;
@@ -464,7 +498,7 @@ form{
   outline: none;
 }
 
-.fs-textarea{
+.fourth-textarea{
   margin-top: 30px;
   height: 135px;
   resize: none;
@@ -503,25 +537,37 @@ form{
 
 .contact{
 	display: flex;
-    justify-content: center;
-    align-items: center;
+  justify-content: center;
+  align-items: center;
 	color: white;
 }
 
-.contact .email{
+.contact .email a{
 	font-size: 15px;
 	margin-right: 20px;
+	color: white;
+	text-decoration: none;
 }
 
-.contact img{
+.contact .icon-background{
 	width: 36px;
 	height: 36px;
-	margin-left: 10px;
+  position: relative;
+  margin: 0;
+  margin-left: 10px;
+  cursor: pointer;
 }
 
-.contact .phone{
+.contact .icon-background img{
+  width: 14px;
+  height: 11px;
+}
+
+.contact .phone a{
 	font-size: 15px;
 	margin-left: 20px;
+  color: white;
+	text-decoration: none;
 }
 
 .footer-block .author{
@@ -530,6 +576,16 @@ form{
 	margin-top: 44px;
 	color: white;
 	font-size: 16px;
+}
+
+.author a{
+	color: white;
+	margin-left: 3px;
+	text-decoration: underline;
+}
+
+.author .yellow a{
+	color: #fdbd1f;
 }
 
 .author .yellow{

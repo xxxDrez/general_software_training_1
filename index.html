@@ -1,7 +1,7 @@
 <html lang="en">
 
 <head>
-  <title>title</title>
+  <title>Site name | Main page</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap" rel="stylesheet">
@@ -15,11 +15,11 @@
   <header>
     <div class="header">
       <div class="header-inner">
-        <div class="header-logo">
+        <div class="header-brand">
           Site name
         </div>
-        <div class="header-nav">
-          <a>Home</a>
+        <div class="header-navigation">
+          <a class="active">Home</a>
           <a>About</a>
           <a>Work</a>
           <a>Contact</a>
@@ -27,11 +27,11 @@
       </div>
   </header>
   <div class="first-section">
-    <div class="f-s-inner">
-      <div class="f-s-banner">
+    <div class="first-section-inner">
+      <div class="first-section-banner">
         <h1>Cras ornare trist lorem ipsum</h1>
         <h2>cusce pellentesque susc</h2>
-        <div class="f-s-btn">
+        <div class="first-section-button">
           read more
           <div class="triangle__left"></div>
           <div class="triangle__right"></div>
@@ -44,8 +44,10 @@
   <div class="body-inner">
     <div class="second-selection">
       <div class="second-selection-box red">
-        <div class="s-s-box-inner">
-          <img src="assets/images/Chat.png">
+        <div class="second-selection-box-inner">
+          <div class="icon-background">
+            <img src="assets/images/Chat.png">
+          </div>
           <h1>Vestibulum auctor</h1>
           <p>
             Praesent dapibus, neque id cursus faucibus,
@@ -56,8 +58,10 @@
 
       </div>
       <div class="second-selection-box yellow">
-        <div class="s-s-box-inner">
-          <img src="assets/images/pencil.png">
+        <div class="second-selection-box-inner">
+          <div class="icon-background">
+            <img src="assets/images/pencil.png">
+          </div>
           <h1>Integer vitae lib</h1>
           <p>
             Jiraesent dapibus, neque id cursus faucibus,
@@ -68,8 +72,10 @@
 
       </div>
       <div class="second-selection-box blue">
-        <div class="s-s-box-inner">
-          <img src="assets/images/crown.png">
+        <div class="second-selection-box-inner">
+          <div class="icon-background">
+            <img src="assets/images/crown.png">
+          </div>
           <h1>tempor interdum</h1>
           <p>
             Sed adipiscing ornare risus. Morbi est est, b
@@ -80,8 +86,10 @@
 
       </div>
       <div class="second-selection-box violet">
-        <div class="s-s-box-inner">
-          <img src="assets/images/user.png">
+        <div class="second-selection-box-inner">
+          <div class="icon-background">
+            <img src="assets/images/user.png">
+          </div>
           <h1>felis quis tortor</h1>
           <p>
             Lorem dapibus, neque id cursus faucibus,
@@ -94,7 +102,7 @@
     <div class="third-selection">
       <h1>tempor interdum</h1>
       <h2>Integer vitae libero ac risus egestas placerat</h2>
-      <div class="t-h-selection">
+      <div class="third-header-selection">
         <div class="third-selection-box red">
           <img src="assets/images/first-photo.png">
           <p>
@@ -102,7 +110,7 @@
             landit sit amet, sagittis vel, euismod vel, velit.
             Pellentesque egestas sem. Suspendisse commodo ullamcorper
           </p>
-          <a class="t-h-btn red" href="#">read more</a>
+          <a class="third-header-button red" href="#">read more</a>
         </div>
         <div class="third-selection-box yellow">
           <img src="assets/images/second-photo.png">
@@ -111,7 +119,7 @@
             landit sit amet, sagittis vel, euismod vel, velit.
             Pellentesque egestas sem. Suspendisse commodo ullamcorper
           </p>
-          <a class="t-h-btn yellow" href="#">read more</a>
+          <a class="third-header-button yellow" href="#">read more</a>
         </div>
         <div class="third-selection-box green">
           <img src="assets/images/third-photo.png">
@@ -120,20 +128,24 @@
             landit sit amet, sagittis vel, euismod vel, velit.
             Pellentesque egestas sem. Suspendisse commodo ullamcorper
           </p>
-          <a class="t-h-btn green" href="#">read more</a>
+          <a class="third-header-button green" href="#">read more</a>
         </div>
       </div>
     </div>
     <div class="fourth-selection">
-      <img src="assets/images/email.png">
+      <div class="icon-background">
+        <img src="assets/images/mail.png">
+      </div>
       <h1>connnect with us</h1>
-      <div class="separator"><h2>Vivamus vestibulum nulla nec ante</h2></div>
+      <div class="separator">
+        <h2>Vivamus vestibulum nulla nec ante</h2>
+      </div>
       <form>
-        <div class="fs-inputs-container">
+        <div class="fourth-inputs-container">
           <input type="text">
           <input type="text">
         </div>
-        <textarea class="fs-textarea"></textarea>
+        <textarea class="fourth-textarea"></textarea>
       </form>
       <div class="submit">
         siubmit
@@ -141,19 +153,26 @@
         <div class="triangle__right_submit"></div>
         <div class="triangle_submit"></div>
       </div>
-      <!--<div class="submit">siubmit</div>-->
     </div>
   </div>
   <div class="footer-block">
     <div class="contact">
-        <div class="email">info@sitename.com</div>
-        <img src="assets/images/ico-facebook.png">
-        <img src="assets/images/ico-twitter.png">
-        <div class="phone">(000) 777 777 7777</div>
+        <div class="email">
+          <a href="mailto:info@sitename.com">info@sitename.com</a>
+        </div>
+        <div class="icon-background">
+          <img src="assets/images/facebook-f-brands.svg">
+        </div>
+        <div class="icon-background">
+          <img src="assets/images/twitter-brands.svg">
+        </div>
+        <div class="phone">
+          <a href="tel:+(000) 777 777 7777">(000) 777 777 7777</a>
+        </div>
     </div>
     <div class="line"></div>
     <div class="author">
-      <p>Copyright(c) website name. <p class="yellow"> Designed by: www.alltemplateneeds.com </p>  /  Images from: www.wallpaperswide.com, www.photorack.net</p>
+      <p>Copyright(c) website name. <p class="yellow"> Designed by: <a href="www.alltemplateneeds.com">www.alltemplateneeds.com</a></p>  /  Images from: <a href="www.wallpaperswide.com">www.wallpaperswide.com</a>, <a href="www.photorack.net">www.photorack.net</a></p>
     </div>
   </div>
 </body>
